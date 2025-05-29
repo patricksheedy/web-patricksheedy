@@ -1,0 +1,99 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold mb-4">Hi, I'm Patrick Sheedy</h1>
+        <p class="lead mb-4">
+          A passionate software developer specializing in modern web technologies. 
+          I build scalable applications, write about tech, and create useful tools.
+        </p>        
+        <div class="hero-buttons">
+          <a href="apps" class="btn btn-light btn-lg me-3">
+            <i class="fas fa-code me-2"></i>View My Apps
+          </a>
+          <a href="posts" class="btn btn-outline-light btn-lg me-3">
+            <i class="fas fa-blog me-2"></i>Read My Blog
+          </a>
+          <a href="contact" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-envelope me-2"></i>Get In Touch
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <div class="hero-image">
+          <i class="fas fa-user-circle fa-10x opacity-75"></i>
+          <!-- Replace with actual photo: <img src="/images/patrick.jpg" alt="Patrick Sheedy" class="img-fluid rounded-circle shadow-lg"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Blog Posts -->
+<section class="featured-posts py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold">Featured Blog Posts</h2>
+        <p class="lead text-muted">Recent insights and tutorials</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      {{ range first 3 (where .Site.Pages "Type" "posts") }}
+      <div class="col-md-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+            </h5>
+            <p class="card-text text-muted">{{ .Summary | truncate 120 }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">
+                <i class="fas fa-calendar me-1"></i>{{ .Date.Format "Jan 2, 2006" }}
+              </small>
+              <small class="text-muted">
+                <i class="fas fa-clock me-1"></i>{{ .ReadingTime }} min read
+              </small>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent">
+            <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">Read More</a>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>    <div class="text-center mt-4">
+      <a href="posts" class="btn btn-primary">View All Posts</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Snippet -->
+<section class="about-snippet py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h2 class="display-6 fw-bold mb-4">About Me</h2>
+        <p class="lead mb-4">
+          I'm a software developer with a passion for creating innovative web applications 
+          and sharing knowledge through writing. With years of experience in full-stack 
+          development, I enjoy tackling complex problems and building solutions that make 
+          a difference.
+        </p>
+        <p class="mb-4">
+          When I'm not coding, you'll find me exploring new technologies, contributing to 
+          open source projects, or writing about the latest trends in software development.
+        </p>
+        <a href="about" class="btn btn-outline-primary">Learn More About Me</a>
+      </div>
+      <div class="col-lg-4 text-center">
+        <div class="about-image">
+          <i class="fas fa-code fa-8x text-primary opacity-25"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

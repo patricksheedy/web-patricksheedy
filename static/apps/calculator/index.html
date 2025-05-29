@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculator App | Patrick Sheedy</title>
+    <meta name="description" content="A simple calculator built with vanilla JavaScript">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <style>
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .calc-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: right;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
+        .calc-expression {
+            font-size: 1rem;
+            opacity: 0.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        .calc-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: #f0f0f0;
+        }
+        
+        .calc-btn {
+            border: none;
+            padding: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            background: white;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .calc-btn:hover {
+            background: #f8f9fa;
+        }
+        
+        .calc-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .calc-btn.operator {
+            background: #007bff;
+            color: white;
+        }
+        
+        .calc-btn.operator:hover {
+            background: #0056b3;
+        }
+        
+        .calc-btn.clear {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .calc-btn.clear:hover {
+            background: #c82333;
+        }
+        
+        .calc-btn.equals {
+            background: #28a745;
+            color: white;
+        }
+        
+        .calc-btn.equals:hover {
+            background: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (inherited from main site) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../">Patrick Sheedy</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/posts/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/apps/">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>                
+                <div class="d-flex align-items-center">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5 mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mb-4">
+                    <h1 class="display-5 fw-bold">Calculator App</h1>
+                    <p class="lead text-muted">A simple calculator built with vanilla JavaScript</p>
+                    <a href="/apps/" class="btn btn-outline-primary">
+                        <i class="fas fa-arrow-left me-2"></i>Back to Apps
+                    </a>
+                </div>
+                
+                <div class="calculator">
+                    <div class="calc-display">
+                        <div class="calc-expression" id="expression"></div>
+                        <div class="calc-result" id="result">0</div>
+                    </div>
+                    
+                    <div class="calc-buttons">
+                        <button class="calc-btn clear" onclick="clearAll()">C</button>
+                        <button class="calc-btn clear" onclick="clearEntry()">CE</button>
+                        <button class="calc-btn operator" onclick="appendOperator('/')">&divide;</button>
+                        <button class="calc-btn operator" onclick="appendOperator('*')">&times;</button>
+                        
+                        <button class="calc-btn" onclick="appendNumber('7')">7</button>
+                        <button class="calc-btn" onclick="appendNumber('8')">8</button>
+                        <button class="calc-btn" onclick="appendNumber('9')">9</button>
+                        <button class="calc-btn operator" onclick="appendOperator('-')">-</button>
+                        
+                        <button class="calc-btn" onclick="appendNumber('4')">4</button>
+                        <button class="calc-btn" onclick="appendNumber('5')">5</button>
+                        <button class="calc-btn" onclick="appendNumber('6')">6</button>
+                        <button class="calc-btn operator" onclick="appendOperator('+')">+</button>
+                        
+                        <button class="calc-btn" onclick="appendNumber('1')">1</button>
+                        <button class="calc-btn" onclick="appendNumber('2')">2</button>
+                        <button class="calc-btn" onclick="appendNumber('3')">3</button>
+                        <button class="calc-btn equals" onclick="calculate()" rowspan="2">=</button>
+                        
+                        <button class="calc-btn" onclick="appendNumber('0')" style="grid-column: span 2;">0</button>
+                        <button class="calc-btn" onclick="appendNumber('.')">.</button>
+                    </div>
+                </div>
+                
+                <!-- App Info -->
+                <div class="mt-5 p-4 bg-light rounded">
+                    <h4>About This Calculator</h4>
+                    <p class="mb-3">
+                        This calculator demonstrates vanilla JavaScript event handling, DOM manipulation, 
+                        and mathematical operations. It features:
+                    </p>
+                    <ul class="mb-3">
+                        <li>Basic arithmetic operations (+, -, ×, ÷)</li>
+                        <li>Decimal number support</li>
+                        <li>Clear and clear entry functions</li>
+                        <li>Keyboard input support</li>
+                        <li>Responsive design</li>
+                    </ul>
+                    <p class="mb-0">
+                        <strong>Technologies used:</strong> HTML5, CSS3, Vanilla JavaScript, Bootstrap 5
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Patrick Sheedy</h5>
+                    <p class="mb-0">Software Developer specializing in modern web technologies</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 Patrick Sheedy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Calculator JavaScript -->
+    <script>
+        let currentInput = '0';
+        let previousInput = '';
+        let operator = '';
+        let shouldResetDisplay = false;
+
+        const expressionDisplay = document.getElementById('expression');
+        const resultDisplay = document.getElementById('result');
+
+        function updateDisplay() {
+            resultDisplay.textContent = currentInput;
+            
+            if (previousInput && operator) {
+                expressionDisplay.textContent = `${previousInput} ${getOperatorSymbol(operator)}`;
+            } else {
+                expressionDisplay.textContent = '';
+            }
+        }
+
+        function getOperatorSymbol(op) {
+            switch(op) {
+                case '+': return '+';
+                case '-': return '−';
+                case '*': return '×';
+                case '/': return '÷';
+                default: return op;
+            }
+        }
+
+        function appendNumber(number) {
+            if (shouldResetDisplay) {
+                currentInput = '0';
+                shouldResetDisplay = false;
+            }
+
+            if (number === '.' && currentInput.includes('.')) {
+                return;
+            }
+
+            if (currentInput === '0' && number !== '.') {
+                currentInput = number;
+            } else {
+                currentInput += number;
+            }
+
+            updateDisplay();
+        }
+
+        function appendOperator(newOperator) {
+            if (previousInput && operator && !shouldResetDisplay) {
+                calculate();
+            }
+
+            previousInput = currentInput;
+            operator = newOperator;
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function calculate() {
+            if (!previousInput || !operator) return;
+
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+
+            if (isNaN(prev) || isNaN(current)) return;
+
+            let result;
+            switch (operator) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '*':
+                    result = prev * current;
+                    break;
+                case '/':
+                    if (current === 0) {
+                        alert('Cannot divide by zero!');
+                        return;
+                    }
+                    result = prev / current;
+                    break;
+                default:
+                    return;
+            }
+
+            currentInput = result.toString();
+            if (currentInput.length > 12) {
+                currentInput = parseFloat(result).toExponential(6);
+            }
+
+            previousInput = '';
+            operator = '';
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function clearAll() {
+            currentInput = '0';
+            previousInput = '';
+            operator = '';
+            shouldResetDisplay = false;
+            updateDisplay();
+        }
+
+        function clearEntry() {
+            currentInput = '0';
+            updateDisplay();
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+
+            if (key >= '0' && key <= '9') {
+                appendNumber(key);
+            } else if (key === '.') {
+                appendNumber('.');
+            } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+                appendOperator(key);
+            } else if (key === 'Enter' || key === '=') {
+                event.preventDefault();
+                calculate();
+            } else if (key === 'Escape') {
+                clearAll();
+            } else if (key === 'Backspace') {
+                clearEntry();            }
+        });
+
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
