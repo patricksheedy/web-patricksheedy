@@ -41,9 +41,8 @@
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-    <!-- Analytics -->
-  {{ if .Site.Params.googleAnalytics }}
-  <!-- Google tag (gtag.js) -->
+
+  {{ if and (.Site.Params.googleAnalytics) (hugo.IsProduction) }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

@@ -31,6 +31,7 @@ enableGitInfo = true
   github = "https://github.com/patricksheedy"
   linkedin = "https://linkedin.com/in/patricksheedy"
   twitter = "https://twitter.com/patrick_sheedy"
+  googleAnalytics = "G-TP1L00RTZP"
 
 [menu]
   [[menu.main]]
