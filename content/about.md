@@ -5,15 +5,18 @@ date: 2025-05-28
 draft: false
 ---
 
-# About Me
 
-Hello! I'm Patrick Sheedy, a passionate software developer with a deep love for creating innovative web applications and sharing knowledge through writing and teaching.
+# About {{< param author >}}
+
+Hello! I'm {{< param author >}}, a passionate software developer specializing in modern web technologies. I love creating innovative web applications and sharing knowledge through writing and teaching.
 
 ## My Journey
+
 
 My journey into software development began with curiosity and has evolved into a career dedicated to building scalable, efficient, and user-friendly applications. Over the years, I've had the opportunity to work with diverse technologies and tackle challenging problems across various domains.
 
 ### Professional Experience
+
 
 I specialize in full-stack web development, with expertise spanning both frontend and backend technologies. My approach to development emphasizes:
 
@@ -70,14 +73,16 @@ When I'm not immersed in code, you'll find me:
 
 ## Let's Connect
 
+
 I'm always excited to connect with fellow developers, discuss interesting projects, or explore collaboration opportunities. Whether you're looking for technical expertise, want to discuss a project idea, or simply want to chat about the latest in web development, I'd love to hear from you.
+
 
 Feel free to reach out through any of the following channels:
 
-- **Email**: [patrick@patricksheedy.dev](mailto:patrick@patricksheedy.dev)
-- **LinkedIn**: [linkedin.com/in/patricksheedy](https://linkedin.com/in/patricksheedy)
-- **GitHub**: [github.com/patricksheedy](https://github.com/patricksheedy)
-- **Twitter**: [@patricksheedy](https://twitter.com/patricksheedy)
+- **Email**: [{{< param email >}}](mailto:{{< param email >}})
+- **LinkedIn**: [{{< param linkedin >}}]({{< param linkedin >}})
+- **GitHub**: [{{< param github >}}]({{< param github >}})
+- **Twitter**: [{{< param twitter >}}]({{< param twitter >}})
 
 ---
 

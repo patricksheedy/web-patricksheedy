@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://patricksheedy.dev/sitemap.xml
+Sitemap: https://patricksheedy.com/sitemap.xml

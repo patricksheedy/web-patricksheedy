@@ -94,4 +94,5 @@ models\insightface
 * Compare your result to the result on [this page](https://github.com/bytedance/ComfyUI-HyperLoRA?tab=readme-ov-file). It should be very similar.
 * That's it, if you have any issues then leave a comment on the YouTube video and I can help you get going.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0g6F2ZHG6N4" title="ComfyUI Install Script Guide" frameborder="0" allowfullscreen></iframe>
+## Watch the video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i_wlkVGiVy0?si=de3Iwm_xv1Cup_TY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
