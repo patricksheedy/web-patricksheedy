@@ -1,1 +1,1 @@
-hugo server -D --port 2000
+hugo server -D --disableFastRender --port 2000

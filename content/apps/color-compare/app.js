@@ -444,7 +444,7 @@
 		const resetBtn = document.createElement('button');
 		resetBtn.type = 'button';
 		resetBtn.className = 'btn btn-warning btn-sm';
-		resetBtn.textContent = 'Reset ZZZ';
+		resetBtn.textContent = 'Reset';
 		resetBtn.setAttribute('aria-label', 'Reset to 1x1 grid');
 		resetBtn.addEventListener('click', resetGrid);
 
