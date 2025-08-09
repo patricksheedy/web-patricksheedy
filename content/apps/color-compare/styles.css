@@ -1,0 +1,106 @@
+:root {
+	--toolbar-h: 56px;
+	--overlay-bg-dark: rgba(0, 0, 0, 0.45);
+	--overlay-bg-light: rgba(255, 255, 255, 0.6);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+/* Full-viewport grid area below the fixed toolbar */
+.grid {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: var(--toolbar-h);
+	display: flex;
+	align-items: stretch;
+	justify-content: stretch;
+	gap: 0;
+}
+
+.swatch {
+	flex: 1 1 0;
+	min-width: 140px;
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	justify-content: stretch;
+	transition: background-color 120ms ease-in-out;
+}
+
+/* Overlay control panel */
+.swatch .controls {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: .5rem;
+	display: grid;
+	grid-template-columns: 1fr auto auto auto;
+	gap: .5rem;
+	align-items: center;
+}
+
+/* Light/Dark UI variants based on background contrast */
+.swatch.ui-dark .controls {
+	background: var(--overlay-bg-dark);
+	color: #fff;
+}
+.swatch.ui-light .controls {
+	background: var(--overlay-bg-light);
+	color: #000;
+}
+
+/* Inputs/buttons integrate with contrast */
+.swatch.ui-dark .form-control,
+.swatch.ui-dark .form-control-color {
+	background-color: rgba(0,0,0,0.35);
+	color: #fff;
+	border-color: rgba(255,255,255,0.4);
+}
+.swatch.ui-light .form-control,
+.swatch.ui-light .form-control-color {
+	background-color: rgba(255,255,255,0.85);
+	color: #000;
+	border-color: rgba(0,0,0,0.25);
+}
+
+.controls .formats {
+	grid-column: 1 / -1;
+	font-size: .8rem;
+	opacity: .9;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* Invalid input feedback */
+.form-control.is-invalid {
+	border-color: #dc3545;
+}
+
+/* Make small controls touch-friendly */
+.form-control, .form-control-color, .btn {
+	min-height: 2.25rem;
+}
+
+/* Ensure color input looks tidy */
+.form-control-color {
+	padding: 0;
+	width: 2.25rem;
+	height: 2.25rem;
+}
+
+/* Small screens: stack controls if tight */
+@media (max-width: 480px) {
+	.swatch .controls {
+		grid-template-columns: 1fr auto auto;
+	}
+}

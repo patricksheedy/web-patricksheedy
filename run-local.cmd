@@ -1,1 +1,1 @@
-hugo server -D -F -E --port 2000 --renderToMemory --disableFastRender --noHTTPCache --forceSyncStatic --gc --printPathWarnings --printUnusedTemplates --navigateToChanged --templateMetrics --templateMetricsHints
+hugo server -D --port 2000
