@@ -1,4 +1,4 @@
-baseURL = 'https://patricksheedy.com'
+baseURL = 'https://patricksheedy.com/'
 languageCode = 'en-us'
 title = 'Patrick Sheedy - Software Developer'
 canonifyURLs = true
