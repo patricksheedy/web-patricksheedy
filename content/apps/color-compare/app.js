@@ -444,7 +444,7 @@
 		const resetBtn = document.createElement('button');
 		resetBtn.type = 'button';
 		resetBtn.className = 'btn btn-warning btn-sm';
-		resetBtn.textContent = 'Reset';
+		resetBtn.textContent = 'Reset Grid';
 		resetBtn.setAttribute('aria-label', 'Reset to 1x1 grid');
 		resetBtn.addEventListener('click', resetGrid);
 
@@ -452,7 +452,7 @@
 		const randomBtn = document.createElement('button');
 		randomBtn.type = 'button';
 		randomBtn.className = 'btn btn-info btn-sm';
-		randomBtn.textContent = 'Randomize';
+		randomBtn.textContent = 'Randomize Colors';
 		randomBtn.setAttribute('aria-label', 'Randomize all colors');
 		randomBtn.addEventListener('click', randomizeColors);
 
@@ -460,14 +460,14 @@
 		const shareBtn = document.createElement('button');
 		shareBtn.type = 'button';
 		shareBtn.className = 'btn btn-success btn-sm';
-		shareBtn.textContent = 'Share';
+		shareBtn.textContent = 'Share Link';
 		shareBtn.setAttribute('aria-label', 'Copy share URL to clipboard');
 		shareBtn.addEventListener('click', async () => {
 			try {
 				const url = encodeStateToUrl();
 				await navigator.clipboard.writeText(url);
-				shareBtn.textContent = 'Copied!';
-				setTimeout(() => (shareBtn.textContent = 'Share'), 1500);
+				shareBtn.textContent = 'Link copied to clipboard';
+				setTimeout(() => (shareBtn.textContent = 'Share'), 2500);
 			} catch {
 				// Fallback for browsers without clipboard API
 				const url = encodeStateToUrl();
@@ -481,6 +481,8 @@
 		buttonContainer.appendChild(resetBtn);
 		buttonContainer.appendChild(randomBtn);
 		buttonContainer.appendChild(shareBtn);
+
+		console.log('3 Toolbar setup complete');
 	}
 
 	setupToolbar();
