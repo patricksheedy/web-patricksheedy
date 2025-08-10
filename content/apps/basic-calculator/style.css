@@ -1,0 +1,83 @@
+:root {
+  --bg: radial-gradient(1200px 600px at 10% 10%, #f0f4ff 0%, #ffffff 40%, #fefefe 100%);
+  --calc-ar: 4 / 5;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background: var(--bg);
+}
+
+html body {
+  padding-top: 0;
+}
+
+.calc-wrap {
+  aspect-ratio: var(--calc-ar);
+  width: min(100vw, calc(100vh * var(--calc-ar)));
+  height: auto;
+}
+.card, .card-body {
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.calc-display {
+  width: 100%;
+  min-height: 76px;
+  padding: 12px 16px;
+  border-radius: 0.5rem;
+  background: #0b1220;
+  color: #e9f2ff;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  text-align: right;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+.calc-grid .btn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 1.25rem;
+  border-radius: 0.6rem;
+}
+.calc-grid .btn-success, .calc-grid .row-span-2{
+  grid-row: span 2;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+@media (max-width: 575.98px) {
+  .calc-wrap {
+    width: min(100vw, calc(100vh * var(--calc-ar)));
+  }
+  .calc-display {
+    min-height: 64px;
+    font-size: 1.75rem;
+  }
+  .calc-grid {
+    gap: 8px;
+  }
+  .calc-grid .btn {
+    font-size: 1.125rem;
+  }
+}
+/* Make the calculator slightly wider on medium screens while keeping height-filled behavior */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  :root { --calc-ar: 11 / 14; }
+}
+/* Make the calculator wider on large screens to reduce narrowness */
+@media (min-width: 992px) {
+  :root { --calc-ar: 4 / 5; }
+}
