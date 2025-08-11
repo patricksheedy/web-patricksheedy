@@ -1,0 +1,174 @@
+:root {
+  --bg: radial-gradient(1200px 600px at 10% 10%, #f0f4ff 0%, #ffffff 40%, #fefefe 100%);
+  --bmi-ar: 4 / 5;
+  --underweight-color: #4dabf7;
+  --normal-color: #51cf66;
+  --overweight-color: #fcc419;
+  --obese-color: #ff6b6b;
+  --highlight-color: #ff922b;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+}
+
+html body {
+  padding-top: 0;
+}
+
+.bmi-wrap {
+  width: min(95vw, 700px);
+  margin: 0 auto;
+}
+
+.card, .card-body {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.result-panel {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.gauge-wrapper {
+  height: 120px;
+  position: relative;
+}
+
+.bmi-chart-container {
+  margin-bottom: 1.5rem;
+}
+
+.bmi-chart {
+  height: 40px;
+  border-radius: 20px;
+  margin: 1rem 0;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.bmi-chart::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: var(--highlight-color);
+  top: 0;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.bmi-chart.has-marker::after {
+  display: block;
+}
+
+.chart-section {
+  height: 100%;
+}
+
+.section-underweight {
+  background-color: var(--underweight-color);
+  width: 15%;
+}
+
+.section-normal {
+  background-color: var(--normal-color);
+  width: 25%;
+}
+
+.section-overweight {
+  background-color: var(--overweight-color);
+  width: 25%;
+}
+
+.section-obese {
+  background-color: var(--obese-color);
+  width: 35%;
+}
+
+.bmi-categories {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.category {
+  flex: 1;
+  padding: 0 5px;
+  font-size: 0.85rem;
+}
+
+.category-underweight {
+  color: var(--underweight-color);
+}
+
+.category-normal {
+  color: var(--normal-color);
+}
+
+.category-overweight {
+  color: var(--overweight-color);
+}
+
+.category-obese {
+  color: var(--obese-color);
+}
+
+.category-label {
+  font-weight: 600;
+}
+
+.category-range {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+#gauge-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+}
+
+#gauge-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 575.98px) {
+  .bmi-wrap {
+    width: 95vw;
+  }
+  
+  .result-panel {
+    padding: 1rem;
+  }
+  
+  #bmi-value {
+    font-size: 1.8rem;
+  }
+  
+  .bmi-categories {
+    font-size: 0.75rem;
+  }
+  
+  .category-range {
+    font-size: 0.65rem;
+  }
+}

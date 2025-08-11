@@ -1,0 +1,11 @@
+# BMI Calculator Requirements
+- Implement a web-based BMI (Body Mass Index) calculator with a responsive user interface using the latest Bootstrap version.
+- Allow users to input their height and weight in both metric (cm, kg) and imperial (ft/in, lbs) units.
+- Provide a toggle to switch between imperial and metric measurement systems.
+- Calculate and display the user's BMI with appropriate weight category classification.
+- Display a visual BMI chart showing underweight, normal weight, overweight, and obesity ranges.
+- Highlight the user's BMI position on the chart.
+- Include a brief explanation of BMI categories and their health implications.
+- Ensure the app is fully responsive and visually appealing on all device sizes.
+- Follow best SEO practices for the calculator page.
+- Do not include comments or documentation except in this requirements file.
