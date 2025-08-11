@@ -1,0 +1,11 @@
+# Investment Calculator Requirements
+- Create a compound interest calculator with two calculation modes: lump sum and regular contributions
+- Allow users to input initial investment amount, interest rate, and investment period
+- Support different compounding frequencies (daily, monthly, quarterly, etc.)
+- For regular contributions, support different contribution frequencies
+- Display future value, total contributions, and interest earned
+- Provide visual representation of investment growth over time using Chart.js
+- Display the difference between contributions and total value in the chart
+- Format all currency values properly
+- Ensure calculator works responsively on all screen sizes
+- Use tabs to switch between calculation modes
