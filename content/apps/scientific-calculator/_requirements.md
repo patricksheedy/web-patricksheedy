@@ -1,0 +1,16 @@
+# Scientific Calculator Requirements
+- Implement a web-based scientific calculator with a responsive user interface using the latest Bootstrap version.
+- The calculator must support basic operations (addition, subtraction, multiplication, division) and advanced scientific functions, including:
+  - Trigonometric functions (sin, cos, tan, arcsin, arccos, arctan)
+  - Exponential and logarithmic functions (exp, ln, log10)
+  - Power and root functions (x^y, √, nth root)
+  - Factorial, percentage, and modulus operations
+  - Constants such as π and e
+- Users must be able to input numbers, operations, and functions using on-screen buttons.
+- Allow input of negative numbers and decimal values.
+- Display the current input and result clearly and update in real time.
+- Prevent invalid operations, such as division by zero or invalid function arguments.
+- Ensure fast performance and a visually appealing, intuitive design.
+- The calculator must be fully responsive and optimized for all device sizes.
+- Follow best SEO practices for the calculator page.
+- Do not include comments or documentation except in this requirements file.
