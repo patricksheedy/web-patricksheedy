@@ -7,7 +7,10 @@ tags: ["Calculator", "Utilities", "Math", "Scientific"]
 description: "A fast, responsive, full-featured scientific calculator."
 ---
 
-<main class="min-vh-100 d-flex align-items-center justify-content-center">
+<main class="min-vh-100 d-flex align-items-center justify-content-center position-relative">
+  <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3 rounded-circle shadow" data-bs-toggle="modal" data-bs-target="#helpModal" style="z-index:10;width:2.5rem;height:2.5rem;">
+    <i class="fas fa-question fa-lg text-primary"></i>
+  </button>
   <div class="calc-wrap">
     <section class="card shadow-lg border-0 h-100">
       <div class="card-header bg-transparent">
@@ -60,3 +63,53 @@ description: "A fast, responsive, full-featured scientific calculator."
     </section>
   </div>
 </main>
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="helpModalLabel">Scientific Calculator Help</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Overview</h6>
+        <p>
+          The Scientific Calculator is a powerful tool for advanced mathematical calculations. It supports a wide range of functions including trigonometry, logarithms, exponents, roots, factorials, and more. Designed for students, engineers, scientists, and anyone needing more than basic arithmetic, this calculator is both robust and user-friendly.
+        </p>
+        <h6>How to Use</h6>
+        <ul>
+          <li>Enter numbers using the on-screen buttons or your keyboard.</li>
+          <li>Use function buttons for operations like sin, cos, tan, ln, log, sqrt, powers, and more.</li>
+          <li>Parentheses are supported for grouping expressions.</li>
+          <li>Click <b>=</b> or press <b>Enter</b> to evaluate the expression.</li>
+          <li>Use <b>C</b> to clear all, <b>⌫</b> to backspace.</li>
+        </ul>
+        <h6>Functions Supported</h6>
+        <ul>
+          <li>Trigonometric: sin, cos, tan, arcsin, arccos, arctan (degrees)</li>
+          <li>Logarithmic: ln, log (base 10)</li>
+          <li>Powers and roots: x², x³, xʸ, √, nth root</li>
+          <li>Constants: π, e</li>
+          <li>Factorial, percent, reciprocal, absolute value, exponential</li>
+        </ul>
+        <h6>Keyboard Shortcuts</h6>
+        <ul>
+          <li>Numbers and decimal: 0-9, .</li>
+          <li>Operators: +, -, *, /, ^</li>
+          <li>Enter or =: Calculate</li>
+          <li>Escape: Clear</li>
+          <li>Backspace: Delete last digit</li>
+        </ul>
+        <h6>Tips</h6>
+        <ul>
+          <li>Use parentheses for complex expressions.</li>
+          <li>Trigonometric functions use degrees.</li>
+          <li>Results are displayed instantly after pressing =.</li>
+        </ul>
+        <h6>About</h6>
+        <p>
+          Built with HTML5, CSS3, Bootstrap 5, and Math.js for accurate calculations. All operations are performed locally in your browser.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

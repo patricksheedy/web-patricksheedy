@@ -1,14 +1,17 @@
 ---
 layout: "app"
 title: "BMI Calculator"
-date: 2025-08-10
+date: 2025-08-08
 draft: false
-tags: ["Health", "Calculator", "Utilities", "BMI"]
-description: "Calculate your Body Mass Index (BMI) and understand your weight category with our responsive BMI chart."
+tags: ["Calculator", "Utilities", "Health", "BMI"]
+description: "Calculate your Body Mass Index and see where you fall on the BMI chart."
 ---
 
-<main class="min-vh-100 d-flex align-items-center justify-content-center">
-  <div class="bmi-wrap">
+<main class="min-vh-100 d-flex align-items-center justify-content-center position-relative">
+  <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3 rounded-circle shadow" data-bs-toggle="modal" data-bs-target="#helpModal" style="z-index:10;width:2.5rem;height:2.5rem;">
+    <i class="fas fa-question fa-lg text-primary"></i>
+  </button>
+  <div class="calc-wrap">
     <section class="card shadow-lg border-0 h-100">
       <div class="card-header bg-transparent">
         <h1 class="h4 mb-0 text-center">BMI Calculator</h1>
@@ -102,3 +105,47 @@ description: "Calculate your Body Mass Index (BMI) and understand your weight ca
     </section>
   </div>
 </main>
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="helpModalLabel">BMI Calculator Help</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Overview</h6>
+        <p>
+          The BMI Calculator helps you determine your Body Mass Index, a measure of body fat based on height and weight. It provides instant feedback and visualizes your BMI on a chart, helping you understand your health status.
+        </p>
+        <h6>How to Use</h6>
+        <ul>
+          <li>Enter your height and weight in the provided fields.</li>
+          <li>Choose your preferred units (metric or imperial).</li>
+          <li>Click "Calculate" to see your BMI and where you fall on the BMI chart.</li>
+        </ul>
+        <h6>Understanding BMI</h6>
+        <ul>
+          <li>BMI &lt; 18.5: Underweight</li>
+          <li>BMI 18.5–24.9: Normal weight</li>
+          <li>BMI 25–29.9: Overweight</li>
+          <li>BMI 30+: Obese</li>
+        </ul>
+        <h6>Features</h6>
+        <ul>
+          <li>Instant BMI calculation</li>
+          <li>Visual chart for BMI categories</li>
+          <li>Responsive and accessible design</li>
+        </ul>
+        <h6>Tips</h6>
+        <ul>
+          <li>BMI is a general guideline and may not reflect body composition for athletes or certain populations.</li>
+          <li>Consult a healthcare provider for a full health assessment.</li>
+        </ul>
+        <h6>About</h6>
+        <p>
+          Built with HTML5, CSS3, Bootstrap 5, and Chart.js. All calculations are performed locally in your browser.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
