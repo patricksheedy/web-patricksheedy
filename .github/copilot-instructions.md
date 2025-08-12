@@ -17,6 +17,7 @@
     - Each app should be a self-contained web application.
     - Each app should take up the entire screen (no header or footer). There can be empty space on the page if it is needed for layout purposes (for example, aspect ratio needs to be maintained).
     - Each app should have its own directory under content/apps.
+    - Reference the basic-calculator to see the format of apps.
     - Each app should have these files only:
         - _requirements.md : All requirements go here.
         - apps.js : All Javascript code goes here.
