@@ -1,0 +1,15 @@
+# Loan Comparison Calculator Requirements
+- Implement a loan comparison tool that allows users to compare up to 3 different loan offers side-by-side.
+- For each loan, input loan amount, interest rate, loan term, and optional fees.
+- Calculate and display monthly payment, total payment, total interest, and APR for each loan.
+- Show side-by-side comparison table highlighting the best option.
+- Include amortization schedule preview for each loan.
+- Calculate and display the total cost difference between loans.
+- Support different payment frequencies: monthly, bi-weekly, weekly.
+- Include extra payment scenarios to show payoff acceleration.
+- Visualize comparison with charts showing total costs and interest over time.
+- Add option to factor in points, origination fees, and closing costs.
+- Include savings calculator showing how much saved by choosing best loan.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the loan comparison calculator page.
+- Do not include comments or documentation except in this requirements file.

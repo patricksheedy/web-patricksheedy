@@ -331,4 +331,234 @@ draft: false
             </div>
         </div>
     </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-key fa-3x text-danger"></i>
+                </div>
+                <h5 class="card-title">Password Generator</h5>
+                <p class="card-text">Generate strong, secure passwords with customizable options.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-success text-white me-1">Security</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="password-generator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-hourglass-half fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">Countdown Timer</h5>
+                <p class="card-text">Versatile timer with presets for productivity, cooking, and workouts.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Productivity</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="countdown-timer" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-balance-scale fa-3x text-info"></i>
+                </div>
+                <h5 class="card-title">Unit Converter</h5>
+                <p class="card-text">Convert between length, weight, temperature, volume, and more.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Utilities</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="unit-converter" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-apple-alt fa-3x text-success"></i>
+                </div>
+                <h5 class="card-title">Calorie Calculator</h5>
+                <p class="card-text">Calculate daily calorie needs, BMR, TDEE, and macros for your goals.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-success text-white me-1">Health</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="calorie-calculator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-hand-holding-usd fa-3x text-warning"></i>
+                </div>
+                <h5 class="card-title">Loan Comparison Calculator</h5>
+                <p class="card-text">Compare up to 3 loans side-by-side to find the best option.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Finance</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="loan-comparison-calculator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-birthday-cake fa-3x text-danger"></i>
+                </div>
+                <h5 class="card-title">Age Calculator</h5>
+                <p class="card-text">Calculate exact age in years, months, days, and discover birth facts.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Utilities</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="age-calculator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-percent fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">Percentage Calculator</h5>
+                <p class="card-text">Calculate percentages, discounts, tips, and percentage changes.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Math</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="percentage-calculator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-dice fa-3x text-info"></i>
+                </div>
+                <h5 class="card-title">Random Number Generator</h5>
+                <p class="card-text">Generate random numbers with dice roller, coin flip, and statistics.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-success text-white me-1">Gaming</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="random-number-generator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-calendar-alt fa-3x text-warning"></i>
+                </div>
+                <h5 class="card-title">Date Calculator</h5>
+                <p class="card-text">Calculate days between dates, add/subtract time, and count business days.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Utilities</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="date-calculator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-money-bill-wave fa-3x text-success"></i>
+                </div>
+                <h5 class="card-title">Salary Calculator</h5>
+                <p class="card-text">Convert between hourly, monthly, and annual salary with tax estimates.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">Finance</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="salary-calculator" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

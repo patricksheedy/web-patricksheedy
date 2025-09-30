@@ -1,0 +1,166 @@
+:root {
+  --bg: radial-gradient(1200px 600px at 10% 10%, #fff5e6 0%, #ffffff 40%, #fefefe 100%);
+  --calc-ar: 4 / 6;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+}
+
+html body {
+  padding-top: 0;
+}
+
+.calc-wrap {
+  aspect-ratio: var(--calc-ar);
+  width: min(100vw, calc(100vh * var(--calc-ar)));
+  height: auto;
+}
+
+.card, .card-body {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-display-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 2rem;
+}
+
+.timer-circle {
+  width: 100%;
+  height: auto;
+  transform: rotate(-90deg);
+}
+
+.timer-circle-bg {
+  fill: none;
+  stroke: #e9ecef;
+  stroke-width: 8;
+}
+
+.timer-circle-progress {
+  fill: none;
+  stroke: #0d6efd;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+}
+
+.timer-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #212529;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.timer-controls .btn {
+  min-width: 100px;
+}
+
+.form-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.preset-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preset-btn {
+  flex: 1 1 calc(33.333% - 8px);
+  min-width: 80px;
+}
+
+.custom-time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.time-input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-input-group input {
+  width: 70px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.time-separator {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 5px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .calc-wrap {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: auto;
+  }
+
+  .timer-display-container {
+    max-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .timer-display {
+    font-size: 2.5rem;
+  }
+
+  .timer-controls .btn {
+    min-width: 80px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .time-input-group input {
+    width: 60px;
+    font-size: 1rem;
+  }
+
+  .preset-btn {
+    flex: 1 1 calc(50% - 8px);
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  :root { 
+    --calc-ar: 5 / 7; 
+  }
+}
+
+@media (min-width: 992px) {
+  :root { 
+    --calc-ar: 4 / 6; 
+  }
+}

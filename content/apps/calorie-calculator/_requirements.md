@@ -1,0 +1,15 @@
+# Calorie Calculator Requirements
+- Implement a comprehensive calorie and macronutrient calculator based on age, gender, weight, height, and activity level.
+- Calculate Basal Metabolic Rate (BMR) using Mifflin-St Jeor equation.
+- Calculate Total Daily Energy Expenditure (TDEE) based on activity level.
+- Provide calorie recommendations for weight loss, maintenance, and weight gain.
+- Calculate and display macronutrient breakdown (protein, carbs, fats) in grams and percentages.
+- Support both metric (kg, cm) and imperial (lbs, ft/in) units with toggle.
+- Include activity level options: sedentary, lightly active, moderately active, very active, extremely active.
+- Display weekly and monthly weight change projections.
+- Show multiple diet approaches: balanced, low-carb, high-protein, keto.
+- Visualize results with charts showing calorie distribution and macros.
+- Include save/export results feature.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the calorie calculator page.
+- Do not include comments or documentation except in this requirements file.

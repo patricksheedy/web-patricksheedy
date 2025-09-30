@@ -1,0 +1,16 @@
+# Age Calculator Requirements
+- Implement a precise age calculator that calculates age in years, months, days, hours, minutes, and seconds.
+- Allow users to input birthdate using date picker or manual entry.
+- Display current age with breakdown: X years, Y months, Z days.
+- Calculate age in different units: total days lived, total hours, total minutes, total seconds.
+- Show next birthday countdown with days remaining.
+- Display day of week user was born.
+- Calculate age on a specific future or past date.
+- Include zodiac sign and birth stone information.
+- Show fun facts: heartbeats lived, breaths taken (estimates).
+- Calculate age in other planet years (Mars, Venus, Jupiter, etc.).
+- Include famous people born on the same date.
+- Add option to compare ages between two people.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the age calculator page.
+- Do not include comments or documentation except in this requirements file.

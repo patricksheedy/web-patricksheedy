@@ -1,0 +1,14 @@
+# Countdown Timer Requirements
+- Implement a visual countdown timer with multiple preset durations and custom time setting.
+- Support hours, minutes, and seconds input for custom countdowns.
+- Include popular presets: 1 min, 5 min, 10 min, 15 min, 30 min, 1 hour, Pomodoro (25 min).
+- Display large, easy-to-read countdown with circular progress visualization.
+- Implement start, pause, resume, and reset controls.
+- Play an alert sound and show notification when timer completes.
+- Support fullscreen mode for distraction-free timing.
+- Add option to loop/repeat timer automatically.
+- Include keyboard shortcuts (Space to start/pause, R to reset).
+- Store last used timer settings in browser.
+- Ensure the interface is responsive and visually stunning using the latest Bootstrap version.
+- Follow best SEO practices for the countdown timer page.
+- Do not include comments or documentation except in this requirements file.

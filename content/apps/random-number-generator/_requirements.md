@@ -1,0 +1,18 @@
+# Random Number Generator Requirements
+- Implement a versatile random number generator with multiple modes and options.
+- Support generating single or multiple random numbers (up to 1000 at once).
+- Allow users to set minimum and maximum range (including negative numbers).
+- Option for integer-only or decimal number generation.
+- Support for unique numbers only (no duplicates) or allow repeats.
+- Include preset ranges: 1-10, 1-100, 1-1000, dice rolls (1-6), coin flip.
+- Generate random number sequences with specified count.
+- Display generated numbers in list format with copy all functionality.
+- Include statistics: sum, average, median, min, max of generated numbers.
+- Add dice roller mode with visual dice representation (1-6 dice).
+- Include lottery number generator with customizable pool size.
+- Support random decimal generator with precision control.
+- Add export options: copy, download as CSV or TXT.
+- Ensure cryptographically secure randomness for sensitive applications.
+- Make the interface responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the random number generator page.
+- Do not include comments or documentation except in this requirements file.

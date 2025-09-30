@@ -1,0 +1,14 @@
+# Unit Converter Requirements
+- Implement a comprehensive unit converter supporting multiple categories: length, weight, temperature, volume, area, speed, time, energy, and data.
+- Provide a clean interface with category selection dropdown.
+- Allow users to select "from" and "to" units within each category.
+- Support real-time conversion as user types.
+- Include swap button to quickly reverse conversion direction.
+- Display conversion formula and explanation.
+- Support decimal and scientific notation inputs.
+- Include common unit abbreviations and full names.
+- Add favorites/recently used units for quick access.
+- Ensure high precision calculations (up to 10 decimal places).
+- Make the interface responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the unit converter page.
+- Do not include comments or documentation except in this requirements file.

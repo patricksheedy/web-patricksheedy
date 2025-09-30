@@ -1,0 +1,13 @@
+# Password Generator Requirements
+- Implement a secure password generator with customizable options for length, character types, and complexity.
+- Allow users to specify password length (8-128 characters) using a slider.
+- Provide checkboxes to include/exclude uppercase letters, lowercase letters, numbers, and special characters.
+- Display a visual strength indicator showing password security level (Weak, Fair, Good, Strong, Very Strong).
+- Generate multiple passwords at once (batch generation of 1-10 passwords).
+- Include a one-click copy to clipboard feature with visual confirmation.
+- Show entropy calculation and estimated crack time for security awareness.
+- Implement avoid ambiguous characters option (e.g., 0/O, 1/l/I).
+- Add option to exclude similar-looking characters for better usability.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the password generator page.
+- Do not include comments or documentation except in this requirements file.

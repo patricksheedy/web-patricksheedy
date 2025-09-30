@@ -1,0 +1,19 @@
+# Date Calculator Requirements
+- Implement a comprehensive date calculator with multiple calculation modes.
+- Mode 1: Calculate days, weeks, months, years between two dates.
+- Mode 2: Add or subtract days/weeks/months/years from a date.
+- Mode 3: Find date X days/weeks/months/years from now or from specific date.
+- Mode 4: Calculate age between dates with detailed breakdown.
+- Mode 5: Calculate working days between dates (excluding weekends and holidays).
+- Display results in multiple units: days, weeks, months, years, hours, minutes.
+- Include week number calculation and day of year.
+- Show day of week for any date.
+- Include holiday calculator with common US holidays.
+- Support date range validation and leap year detection.
+- Add calendar visualization showing date ranges.
+- Include duration calculator showing time between dates in human-readable format.
+- Support both date picker and manual date entry.
+- Display results with detailed breakdown and alternative formats.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the date calculator page.
+- Do not include comments or documentation except in this requirements file.

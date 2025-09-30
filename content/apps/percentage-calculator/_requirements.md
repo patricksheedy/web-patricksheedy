@@ -1,0 +1,17 @@
+# Percentage Calculator Requirements
+- Implement a multi-purpose percentage calculator with multiple calculation modes.
+- Mode 1: What is X% of Y? (e.g., 15% of 200)
+- Mode 2: X is what percent of Y? (e.g., 30 is what % of 150)
+- Mode 3: X is Y% of what? (reverse percentage calculation)
+- Mode 4: Percentage increase/decrease calculator (from X to Y)
+- Mode 5: Percentage change calculator with direction indicator.
+- Mode 6: Tip calculator with bill splitting.
+- Mode 7: Discount calculator showing final price.
+- Mode 8: Tax calculator (add or remove tax percentage).
+- Display step-by-step calculation explanation for learning.
+- Include quick percentage reference table (10%, 15%, 20%, 25%, 50%, etc.).
+- Support decimal percentages and negative numbers.
+- Show visual representation with progress bars or pie charts.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the percentage calculator page.
+- Do not include comments or documentation except in this requirements file.

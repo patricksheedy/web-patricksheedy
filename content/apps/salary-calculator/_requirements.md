@@ -1,0 +1,18 @@
+# Salary Calculator Requirements
+- Implement a comprehensive salary calculator that converts between hourly, monthly, and annual salaries.
+- Calculate gross and net (take-home) pay based on US federal tax brackets.
+- Include fields for: annual/monthly/hourly rate, hours per week, weeks per year.
+- Calculate federal income tax, FICA (Social Security and Medicare), state tax.
+- Support multiple filing statuses: single, married filing jointly, married filing separately, head of household.
+- Include deduction inputs: 401(k), HSA, FSA, health insurance, other pre-tax deductions.
+- Display pay breakdown: gross pay, taxes, deductions, net pay.
+- Show multiple time period views: annual, monthly, bi-weekly, weekly, daily, hourly.
+- Calculate effective tax rate and marginal tax rate.
+- Include comparison mode to compare multiple salary offers.
+- Visualize income breakdown with charts: gross vs net, tax distribution.
+- Calculate hourly equivalent and cost per hour of benefits.
+- Add overtime calculator with time-and-a-half and double-time rates.
+- Include raise/promotion calculator showing impact of salary increase.
+- Ensure the interface is responsive and visually appealing using the latest Bootstrap version.
+- Follow best SEO practices for the salary calculator page.
+- Do not include comments or documentation except in this requirements file.
