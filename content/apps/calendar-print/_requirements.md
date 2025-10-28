@@ -1,0 +1,11 @@
+# Calendar Print Requirements
+- Build a full-screen calendar print generator that follows the established app structure and uses Bootstrap 5.
+- Provide user controls for months per page (1-5), start month (default current), end month (default current), and week start day with Sunday preselected.
+- Validate inputs, block invalid ranges, and give inline feedback without reloading the page.
+- Generate a downloadable multi-month PDF entirely in the browser using the jsPDF CDN bundle.
+- Lay out months according to the selected months-per-page option with clear typography and grid lines.
+- Support every day of the week as a potential starting column for the calendar layout.
+- Include accessible labels, focus management, and status updates for screen readers.
+- Ensure the interface is responsive, performant, and visually polished on all screen sizes.
+- Add SEO-friendly metadata and descriptive content tailored for printable calendars.
+- Respect repository guidelines: no inline code comments, no extra documentation beyond this file, use popular libraries instead of custom tooling.

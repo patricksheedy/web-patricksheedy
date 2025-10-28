@@ -1,0 +1,108 @@
+:root {
+  --planner-bg: radial-gradient(1200px 600px at 5% 10%, #eaf4ff 0%, #ffffff 50%, #f7f7ff 100%);
+  --planner-ar: 4 / 5;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--planner-bg);
+}
+
+html body {
+  padding-top: 0;
+}
+
+.planner-wrap {
+  aspect-ratio: var(--planner-ar);
+  width: min(100vw, calc(100vh * var(--planner-ar)));
+  max-width: 960px;
+  height: auto;
+}
+
+.card,
+.card-body {
+  height: 100%;
+}
+
+.card-header {
+  padding: 2rem 2rem 1rem;
+}
+
+.card-body {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+#calendar-form .form-control,
+#calendar-form .form-select {
+  border-radius: 1rem;
+  border: 1px solid rgba(13, 110, 253, 0.15);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#calendar-form .form-control-lg,
+#calendar-form .form-select-lg {
+  padding: 0.9rem 1.1rem;
+}
+
+#generate-btn {
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.25);
+}
+
+#generate-btn:disabled {
+  box-shadow: none;
+}
+
+#feedback {
+  width: 100%;
+}
+
+.planner-summary {
+  padding: 1.25rem;
+  background: rgba(13, 110, 253, 0.05);
+  border-radius: 1.25rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.planner-summary i {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 575.98px) {
+  .planner-wrap {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    aspect-ratio: auto;
+  }
+
+  .card-header {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  #generate-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  :root {
+    --planner-ar: 5 / 6;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --planner-ar: 4 / 5;
+  }
+}
