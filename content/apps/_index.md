@@ -565,6 +565,29 @@ draft: false
         <div class="card h-100 shadow-sm app-card">
             <div class="card-body">
                 <div class="app-icon mb-3 text-center">
+                    <i class="fas fa-file-alt fa-3x text-warning"></i>
+                </div>
+                <h5 class="card-title">Text to PDF Converter</h5>
+                <p class="card-text">Paste text, choose layout options, and download a polished PDF instantly.</p>
+                <div class="app-tags mb-3">
+                    <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                    <span class="badge bg-info text-dark me-1">jsPDF</span>
+                    <span class="badge bg-danger text-white">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="d-flex justify-content-between">
+                    <a href="text-to-pdf" class="btn btn-primary btn-sm">
+                        <i class="fas fa-play me-1"></i>Launch App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm app-card">
+            <div class="card-body">
+                <div class="app-icon mb-3 text-center">
                     <i class="fas fa-money-bill-wave fa-3x text-success"></i>
                 </div>
                 <h5 class="card-title">Salary Calculator</h5>
