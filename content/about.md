@@ -79,7 +79,7 @@ I'm always excited to connect with fellow developers, discuss interesting projec
 
 Feel free to reach out through any of the following channels:
 
-- **Email**: [{{< param email >}}](mailto:{{< param email >}})
+- **Email**: {{< email text="Email me" >}}
 - **LinkedIn**: [{{< param linkedin >}}]({{< param linkedin >}})
 - **GitHub**: [{{< param github >}}]({{< param github >}})
 - **Twitter**: [{{< param twitter >}}]({{< param twitter >}})

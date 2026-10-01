@@ -1,10 +1,10 @@
 ---
 layout: "app"
-title: "ComfyUI Installation Script"
+title: "Color Comparer"
 date: 2025-08-08
 draft: false
-tags: ["ComfyUI", "Script", "AI"]
-description: "Easily install and manage multiple copies of ComfyUI with this script."
+tags: ["JavaScript", "CSS3", "HTML5"]
+description: "A simple tool for comparing colors and their contrast ratios."
 ---
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />

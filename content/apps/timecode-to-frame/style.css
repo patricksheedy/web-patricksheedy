@@ -1,0 +1,41 @@
+body {
+  background: #0b0f1a;
+}
+
+.tc-card {
+  width: 480px;
+  max-width: 100%;
+  background: #121728;
+  color: #e6e9f2;
+  border-radius: 1rem;
+}
+
+.tc-card .form-control,
+.tc-card .form-select {
+  background: #1a1a1a;
+  color: #eee;
+  border-color: #444;
+}
+
+.tc-card .form-control:focus,
+.tc-card .form-select:focus {
+  background: #1a1a1a;
+  color: #eee;
+  border-color: #666;
+}
+
+.tc-section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #7fd;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.tc-result {
+  color: #7fd;
+  font-size: 1.4rem;
+  min-height: 2rem;
+  min-width: 4rem;
+}

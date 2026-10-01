@@ -3,6 +3,16 @@
 (function() {
     'use strict';
 
+    // Navbar shrink-on-scroll
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        const onScroll = () => {
+            navbar.classList.toggle('shrunk', window.scrollY > 20);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
+
     // Search Functionality
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
@@ -181,47 +191,18 @@
         observer.observe(card);
     });
 
-    // Contact form handling (if present)
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData.entries());
-            
-            // Simple form validation
-            if (!data.name || !data.email || !data.message) {
-                showAlert('Please fill in all required fields.', 'warning');
-                return;
+    // Obfuscated email links: assemble mailto at runtime so scrapers see nothing
+    document.querySelectorAll('a.email-obfusc').forEach(link => {
+        try {
+            const address = atob(link.dataset.u) + '@' + atob(link.dataset.d);
+            link.href = 'mailto:' + address;
+            if (link.textContent.trim() === '' && link.children.length === 0) {
+                link.textContent = address;
             }
-            
-            if (!isValidEmail(data.email)) {
-                showAlert('Please enter a valid email address.', 'warning');
-                return;
-            }
-            
-            // Show loading state
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission (replace with actual form handling)
-            setTimeout(() => {
-                showAlert('Thank you for your message! I\'ll get back to you soon.', 'success');
-                this.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
-    }
-
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
+        } catch (err) {
+            /* leave link inert if decoding fails */
+        }
+    });
 
     function showAlert(message, type = 'info') {
         const alertDiv = document.createElement('div');

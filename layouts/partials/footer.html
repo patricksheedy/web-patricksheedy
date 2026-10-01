@@ -1,0 +1,45 @@
+<footer class="site-footer py-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-5">
+        <h5>{{ .Site.Params.author }}</h5>
+        <p class="mb-0">{{ .Site.Params.description }}</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-uppercase small fw-bold text-muted mb-3">Explore</h6>
+        <ul class="list-unstyled mb-0">
+          {{ range .Site.Menus.main }}
+          <li class="mb-1"><a href="{{ .URL }}" class="text-decoration-none">{{ .Name }}</a></li>
+          {{ end }}
+          <li class="mb-1"><a href="/apps/" class="text-decoration-none">Apps</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-uppercase small fw-bold text-muted mb-3">Connect</h6>
+        <div class="social-links d-flex gap-3 fs-5">
+          {{ if .Site.Params.github }}
+          <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {{ end }}
+          {{ if .Site.Params.linkedin }}
+          <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {{ end }}
+          {{ if .Site.Params.twitter }}
+          <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          {{ end }}
+          <a href="#" class="email-obfusc" data-u="cGF0cmlja3NoZWVkeQ==" data-d="Z21haWwuY29t" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider mt-4 pt-3">
+      <p class="mb-0 small text-muted text-center">&copy; {{ now.Year }} {{ .Site.Params.author }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
