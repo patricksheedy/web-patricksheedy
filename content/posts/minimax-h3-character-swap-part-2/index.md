@@ -34,14 +34,14 @@ Audio added: https://drive.google.com/file/d/1UA2neexDaddODunbCv2xEf_hirEAFqyb/v
 
 ## Instructions
 
-Drop the workflow into ComfyUI.
-Install ComfyUI-VideoHelperSuite if you don't already have it. (no other custom nodes needed)
-Download the SAM3 model from the link above. Place it in ComfyUI/models/checkpoints/ .
-Drop your character image into Load Image node
-Drop your video into Load Video Node
-Node is set for small and short video for fast generation, change if desired.
-Customize the prompt in "Select Character from Video Prompt" node to select your character (optional).
-Click the Run button
+1. Install ComfyUI-VideoHelperSuite nightly if you don't already have it. (no other custom nodes needed)
+1. Drop the workflow into ComfyUI.
+1. Download the SAM3 model from the link above. Place it in ComfyUI/models/checkpoints/ .
+1. Drop your character image into Load Image node
+1. Drop your video into Load Video Node
+1. Node is set for small and short video for fast generation, change if desired.
+1. Customize the prompt in "Select Character from Video Prompt" node to select your character (optional).
+1. Click the Run button
 
 ## Facial Expressions
 
