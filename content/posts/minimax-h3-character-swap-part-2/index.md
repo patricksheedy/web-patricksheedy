@@ -35,6 +35,7 @@ Audio added: https://drive.google.com/file/d/1UA2neexDaddODunbCv2xEf_hirEAFqyb/v
 ## Instructions
 
 - Install or update VideoHelperSuite node. (no other custom nodes needed)
+- Confirm that the VideoHelperSuite Load Video Node has the Format = H3 option at the bottom, if it doesn't then try git clone into custom_nodes from here: https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite/
 - Download the SAM3 model from the link above. Place it in ComfyUI/models/checkpoints/ 
 - Drop the workflow into ComfyUI.
 - Drop your character image into Load Image node
