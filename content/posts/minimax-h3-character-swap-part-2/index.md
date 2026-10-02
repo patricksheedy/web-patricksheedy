@@ -23,29 +23,29 @@ Lightx2v Lora: https://huggingface.co/Kijai/MiniMax-H3_comfy/blob/main/loras/min
 
 Character Image: <a href="man-1-nobackground.jpg" download="man-1-nobackground.jpg">man-1-nobackground.jpg</a><br />
 
-Dance Video: https://www.pexels.com/video/people-dancing-in-a-club-9003210/<br />
-Audio added: https://drive.google.com/file/d/1ZuzJ1NLlEHYJZBqMS2jJ6aQovkH2Ko25/view?usp=sharing<br />
-
 Boxing Video: https://www.pexels.com/video/two-men-boxing-8612115/<br />
 Audio added: https://drive.google.com/file/d/1XLuitAB3N70N50AhAH_Wnhhxa-KHtMbo/view?usp=sharing<br />
+
+Dance Video: https://www.pexels.com/video/people-dancing-in-a-club-9003210/<br />
+Audio added: https://drive.google.com/file/d/1ZuzJ1NLlEHYJZBqMS2jJ6aQovkH2Ko25/view?usp=sharing<br />
 
 Facial Expression Video: https://www.pexels.com/video/woman-making-faces-3763967/<br />
 Audio added: https://drive.google.com/file/d/1UA2neexDaddODunbCv2xEf_hirEAFqyb/view?usp=sharing<br />
 
 ## Instructions
 
-1. Install ComfyUI-VideoHelperSuite nightly if you don't already have it. (no other custom nodes needed)
-1. Drop the workflow into ComfyUI.
-1. Download the SAM3 model from the link above. Place it in ComfyUI/models/checkpoints/ .
-1. Drop your character image into Load Image node
-1. Drop your video into Load Video Node
-1. Node is set for small and short video for fast generation, change if desired.
-1. Customize the prompt in "Select Character from Video Prompt" node to select your character (optional).
-1. Click the Run button
+- Install or update VideoHelperSuite node. (no other custom nodes needed)
+- Download the SAM3 model from the link above. Place it in ComfyUI/models/checkpoints/ 
+- Drop the workflow into ComfyUI.
+- Drop your character image into Load Image node
+- Drop your video into Load Video Node
+- Node is set for small and short video for fast generation, change if desired.
+- Customize the prompt in "Select Character from Video Prompt" node to select your - character (optional).
+- Click the Run button
 
 ## Facial Expressions
 
-Since the original character is masked out in source video, the AI does not know about the facial emotions. You can add them back in by adding text to the prompt at the bottom of the detailed_description section. For example, add this right before the detailed_description line:
+Since the original character is masked out in source video, the AI does not know about the facial emotions. You can add them back in by adding text to the prompt in the subject_definitions section. For example, add this add the end of the subject_definitions:
 
 `<Subject 1> is smiling throughout the video.`
 
