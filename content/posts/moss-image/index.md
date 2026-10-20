@@ -79,3 +79,16 @@ Reply with the caption only: no title, introduction, explanation or surrounding 
 USER IMAGE IDEA:
 [PUT YOUR IMAGE IDEA HERE]
 ```
+
+## YouTube Video
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/K5zD_af-Tag" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+</iframe>
