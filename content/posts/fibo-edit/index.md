@@ -46,6 +46,9 @@ description: "Fibo 2.0 Edit Workflow"
 │       └── flux2-vae.safetensors
 ```
 
+## Image References in Prompt
+You can use up to 4 image references. In the prompt refer to the images in the order they are attached to the Fibo2 node, from <image_1> to <image_4>.
+
 <!--
 ## YouTube Video
 
