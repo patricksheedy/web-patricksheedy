@@ -28,7 +28,7 @@ description: "Fibo 2.0 Edit Workflow"
 
 <p style="margin-bottom: 4px;">Download these files:</p>
 
-* [fibo2_dev_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/Fibo-2.0/resolve/main/diffusion_models/fibo2_dev_int8_convrot.safetensors)
+* [fibo2_edit_turbo_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/Fibo-2.0/resolve/main/diffusion_models/fibo2_edit_turbo_int8_convrot.safetensors)
 * [qwen3vl_4b_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/Fibo-2.0/resolve/main/text_encoders/qwen3vl_4b_int8_convrot.safetensors)
 * [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/Fibo-2.0/resolve/main/vae/flux2-vae.safetensors)
 
@@ -39,7 +39,7 @@ description: "Fibo 2.0 Edit Workflow"
 📂 ComfyUI/
 ├── 📂 models/
 │   ├── 📂 diffusion_models/
-│   │   └── fibo2_dev_int8_convrot.safetensors
+│   │   └── fibo2_edit_turbo_int8_convrot.safetensors
 │   ├── 📂 text_encoders/
 │   │   └── qwen3vl_4b_int8_convrot.safetensors
 │   └── 📂 vae/
@@ -49,17 +49,16 @@ description: "Fibo 2.0 Edit Workflow"
 ## Image References in Prompt
 You can use up to 4 image references. In the prompt refer to the images in the order they are attached to the Fibo2 node, from <image_1> to <image_4>.
 
-<!--
+
 ## YouTube Video
 
 <iframe 
   width="560" 
   height="315" 
-  src="https://www.youtube.com/embed/K5zD_af-Tag" 
+  src="https://www.youtube.com/embed/u6ijP1Bs0LU"
   title="YouTube video player" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen>
 </iframe>
--->
