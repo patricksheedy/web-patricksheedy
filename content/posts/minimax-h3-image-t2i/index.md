@@ -49,17 +49,17 @@ MiniMax H3 Image is a high-resolution image generation model that works best bet
 
 * Official prompt guide: https://github.com/MiniMax-AI/MiniMax-H3-Image/blob/main/skills/h3-image-prompt-writing/references/t2i-en.txt
 
-<!-- TODO: add YouTube embed when video is ready
+
 ## YouTube Video
 
 <iframe 
   width="560" 
   height="315" 
-  src="https://www.youtube.com/embed/VIDEO_ID"
+  src="https://www.youtube.com/embed/LWBqxJdVgaw?si=eA_f2ednKiuhBDsP"
   title="YouTube video player" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen>
 </iframe>
--->
+
